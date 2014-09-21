@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>DDSlider - A fancy fully customizable slider with inline content support.</title>
+    	
+        <!-- Layout Options -->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        
+        <!-- Slider Configurations - VERY IMPORTANT -->
+        <link href="DDSlider.css" rel="stylesheet" type="text/css" />
+    	
+        <!-- jQuery framework -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        
+        <!-- jQuery easing plugin - VERY IMPORTANT -->
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        
+        <!-- DDSlider jQuery Plugin - VERY IMPORTANT -->
+        <script type="text/javascript" src="js/jquery.DDSlider.min.js"></script>
+        
+        <!-- Let's start the slider -->
+        <script type="text/javascript">
+        
+		//triggers the slider
+        $(document).ready(function() {
+            
+            $('#sliderDiapos').DDSlider({
+				
+				nextSlide: '.sliderButtonPrev',
+				prevSlide: '.sliderButtonNext',
+				selector: '.sliderSelector'
+				
+			});
+            
+        });
+        
+        
+        </script>
+        
+    </head>
+
+	<body>
+
+        <div class="sectionContentLeft">
+
+            <div class="slider">
+                <div class="sliderButtonPrev"></div>
+                <div class="sliderButtonNext"></div>
+                <ul class="sliderSelector"></ul>
+
+                <ul class="sliderDiapos" id="sliderDiapos">
+                    
+                    <li class="fading" style="background-image:url(http://music4deejays.com/wp-content/uploads/2014/05/artworks-000039009778-3csm3v-t500x500.jpg);">
+                        <div class="sliderDiaposInfo">
+                            <h1><a href="">Titulo</a></h1>
+                            <h2>Genero</h2>
+                            <p><a href="#">Listen song</a></p>
+                        </div>
+                        <div class="sliderDiaposLink">
+                            <a href="#"></a>
+                        </div>
+                    </li>
+
+                    <li class="fading">
+                        QUE TAL
+                    </li>
+
+                    <li class="fading">
+                        QUE TAL
+                    </li>
+
+                </ul>
+                <!-- END OF SLIDER -->
+            </div>
+            
+              
+
+	</body>
+    
+</html>
