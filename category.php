@@ -266,21 +266,21 @@
                     <?php
                         $categories = get_the_category();
                         $category_id = $categories[0]->cat_ID;
-                        wpp_get_mostpopular( "range=weekly&limit=8&freshness=1&order_by=views&title_length=8&title_by_words=1&thumbnail_width=40&thumbnail_height=40&stats_views=0&cat='208'&post_html=\"<li>{thumb} <a href='{url}'>{text_title}</a> </li>\"" );
+                        wpp_get_mostpopular( "range=weekly&limit=10&freshness=1&order_by=views&title_length=8&title_by_words=1&thumbnail_width=40&thumbnail_height=40&stats_views=0&cat='208'&post_html=\"<li>{thumb} <a href='{url}'>{text_title}</a> </li>\"" );
                     ?>
                     </div>
                     <div id="month_featured">
                     <?php
                         $categories = get_the_category();
                         $category_id = $categories[0]->cat_ID;
-                        wpp_get_mostpopular( "range=monthly&limit=8&freshness=1&order_by=views&title_length=8&title_by_words=1&thumbnail_width=40&thumbnail_height=40&stats_views=0&cat='208'&post_html=\"<li>{thumb} <a href='{url}'>{text_title}</a> </li>\"" );
+                        wpp_get_mostpopular( "range=monthly&limit=10&freshness=1&order_by=views&title_length=8&title_by_words=1&thumbnail_width=40&thumbnail_height=40&stats_views=0&cat='208'&post_html=\"<li>{thumb} <a href='{url}'>{text_title}</a> </li>\"" );
                     ?>
                     </div>
                     <div id="all_featured" style="display:block;">
                     <?php
                         $categories = get_the_category();
                         $category_id = $categories[0]->cat_ID;
-                        wpp_get_mostpopular( "range=all&limit=8&freshness=1&order_by=views&title_length=8&title_by_words=1&thumbnail_width=40&thumbnail_height=40&stats_views=0&cat='208'&post_html=\"<li>{thumb} <a href='{url}'>{text_title}</a> </li>\"" );
+                        wpp_get_mostpopular( "range=all&limit=10&freshness=1&order_by=views&title_length=8&title_by_words=1&thumbnail_width=40&thumbnail_height=40&stats_views=0&cat='208'&post_html=\"<li>{thumb} <a href='{url}'>{text_title}</a> </li>\"" );
                     ?>
                     </div>
                 <?php else: ?>

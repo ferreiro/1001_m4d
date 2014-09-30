@@ -35,7 +35,7 @@ var hap_settings = {
 	ofm_result_limit: 3,
 
 	/*defaultVolume: 0-1 (Irrelevant on ios mobile) */
-	defaultVolume:0.8,
+	defaultVolume:0.7,
 	/*autoPlay: true/false (false on mobile by default) */
 	autoPlay:false,
 	/*autoLoad: true/false (auto start sound load) */
@@ -48,7 +48,7 @@ var hap_settings = {
 	/* usePlaylistRollovers: true/false. Use rollovers on playlist items (mouseenter, mouseleave + callbacks) */
 	usePlaylistRollovers: false,
 	/* playlistItemContent: title/thumb/all. Auto create titles or thumbnails in playlist items, or both. */
-	playlistItemContent: 'all',
+	playlistItemContent: 'title',
 
 	/* useNumbersInPlaylist: true/false. Prepend numbers in playlist items. */
 	useNumbersInPlaylist: false,

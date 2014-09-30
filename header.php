@@ -61,7 +61,7 @@
 </head>
 <body <?php body_class(); ?>>
   
-<header class="Header">
+<header class="Header" style="display:none;">
   <div class="HeaderGradient"></div>
   <div class="HeaderContent">
 
@@ -71,6 +71,7 @@
       </div>
     </div>
 
+<!--
     <div class="HeaderCenter">
       <div class="HeaderSearch">
 
@@ -87,7 +88,7 @@
         <span class="icon-search" id="btn_search" style="width:20px; height:20px; position:absolute; right:5px; top:50%; margin-top:-10px;"></span>
       </div>
     </div>
-
+-->
     <div class="HeaderButton">
       <a href="#" id="open_MenuDropDown" class="icon-menu"></a>
     </div>
@@ -124,13 +125,139 @@
         </li>
       </ul>
     </div>
-    
+
 
   </div>
 </header>
 
+<header class="HeaderAside">
+    <div class="HeaderAsideTop">
+        <div class="HeaderAsideLogo">
+            <a href="#"></a>
+        </div>
 
-<section class="loginPop" style="display:none;"> 
+        <div class="HeaderAsideSearch">
+          <form action="http://music4deejays.com/" class="searchform" id="searchform" method="get" role="search" _lpchecked="1">
+            <input type="text" class="HeaderSearchInput" name="s" id="s" placeholder="Search..."  autocomplete="off">
+            <input type="submit" class="HeaderSearchSubmit" name="submit" id="searchsubmit" value=" ">
+          </form>
+          <span class="icon-search" id="btn_search" style="width:20px; height:20px; position:absolute; right:5px; top:50%; margin-top:-10px;"></span>
+        </div>
+    </div>  
+    <div class="HeaderAsideMenu">
+      <ul class="Menu">
+          <li class="novedades_m">
+              <a href="/">
+                  <span class="m_icon icon-home"></span>
+                  <span class="m_title">Novedades</span>
+              </a>
+          </li>
+          <h3>Music</h3>
+          <li class="electro_m">
+              <a href="/electro">
+                  <span class="m_icon icon-home"></span>
+                  <span class="m_title">Electro House</span>
+              </a>
+          </li>
+          <li class="progressive_m">
+              <a href="/progressive">
+                  <span class="m_icon icon-home"></span>
+                  <span class="m_title">Progressive</span>
+              </a>
+          </li>
+          <li class="dubstep_m">
+              <a href="/dubstep">
+                  <span class="m_icon icon-home"></span>
+                  <span class="m_title">Dubstep</span>
+              </a>
+          </li>
+          <h3>Spotlight</h3>
+          <li class="trending_m">
+              <a href="/trending">
+                  <span class="m_icon icon-home"></span>
+                  <span class="m_title">Trending</span>
+              </a>
+          </li>
+      </ul>
+    </div>
+    <div class="HeaderAsideLogin">
+      <a href="#" id="openLogin" class="login">
+        <span>
+          Login
+        </span>
+      </a>
+      <a href="#" id="openRegister" class="singup">
+        <span>
+          Sign up
+        </span>
+      </a>
+    </div>
+    <div class="HeaderAsidePlayer">
+
+        <div class="Player" id="Player">
+        <div class="PlayerContent">
+            <div class="PlayerImage">
+                <div class="player_thumb"><img src='' alt=''/></div>
+            </div>
+            <div class="player_mediaName_Mask">
+              <div class="player_mediaName"></div>
+            </div>
+            <div class="PlayerControllers">
+                <div class="controls controls_prev icon-first">
+                  <div class="go_prev"></div>
+                </div>
+                <div class="controls controls_toggle ">
+                  <div class="icon-playsong"></div>
+                </div>
+                <div class="controls controls_next icon-last">
+                  <div class="go_next"></div>
+                </div> 
+            </div>
+            <div class="PlayerCenter">
+                <div class="player_mediaTime_current">00:00</div>
+                <div class="player_progress">
+                    <div class="progress_bg"></div>
+                    <div class="load_progress"></div>
+                    <div class="play_progress">
+                      <span></span>
+                    </div>
+                </div> 
+                <div class="player_progress_tooltip">
+                    <span></span>
+                    <p style="display:none;"></p>
+                </div>
+                <div class="player_mediaTime_total">00:00</div>
+            </div>
+            <div class="PlayerRight">
+              <div class="PlayerVolume">
+                <div class="controls player_volume">
+                  <div class="icon-volume-high"></div>
+                </div>
+                <div class="volume_seekbar" data-orientation="horizontal" >
+                  <div class="volume_bg"></div>
+                  <div class="volume_level"><span></span></div>
+                  <div class="player_volume_tooltip"><p style="display:none;"></p></div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+        </div>
+
+    </div>
+</header>
+
+
+<section class="loginPop" id="loginPop" style="display:none;"> 
+  <div class="close" id="close_contact">
+    <span class="icon-close"><a href="index.php"></a></span>
+  </div>
+  <div class="content">
+    <?php echo do_shortcode('[userpro template=login]'); ?>
+  </div>
+</section>
+
+<section class="loginPop" id="registerPop" style="display:none;"> 
   <div class="close" id="close_contact">
     <span class="icon-close"><a href="index.php"></a></span>
   </div>
@@ -139,53 +266,9 @@
   </div>
 </section>
 
+
 <div class="loader" id="loading">
   <div class="loaderGif"></div>
-</div>
-
-
-<div class="Player" id="Player">
-<div class="PlayerContent">
-    <div class="PlayerControllers">
-        <div class="controls controls_prev icon-first">
-          <div class="go_prev"></div>
-        </div>
-        <div class="controls controls_toggle ">
-          <div class="icon-playsong"></div>
-        </div>
-        <div class="controls controls_next icon-last">
-          <div class="go_next"></div>
-        </div> 
-    </div>
-    <div class="PlayerCenter">
-        <div class="player_mediaTime_current">00:00</div>
-        <div class="player_progress">
-            <div class="progress_bg"></div>
-            <div class="load_progress"></div>
-            <div class="play_progress">
-              <span></span>
-            </div>
-        </div> 
-        <div class="player_progress_tooltip">
-            <span></span>
-            <p style="display:none;"></p>
-        </div>
-        <div class="player_mediaTime_total">00:00</div>
-    </div>
-    <div class="PlayerRight">
-      <div class="PlayerVolume">
-        <div class="controls player_volume">
-          <div class="icon-volume-high"></div>
-        </div>
-        <div class="volume_seekbar" data-orientation="horizontal" >
-          <div class="volume_bg"></div>
-          <div class="volume_level"><span></span></div>
-          <div class="player_volume_tooltip"><p style="display:none;"></p></div>
-        </div>
-      </div>
-    </div>
-  
-</div>
 </div>
 
 <!-- El sectionMenu position absolute bottom 0  -->

@@ -6,9 +6,13 @@ $(window).resize(function() {
 	$('.BoxImage').css("height",boxWidth);
 
 	var sliderWidth = $('.slider').width() ;
-	$('.slider').css("height",sliderWidth / 2.8);
-	$('.sliderDiapos').css("height",sliderWidth / 3.1);
+	$('.slider').css("height",sliderWidth / 2.5);
+	$('.sliderDiapos').css("height",sliderWidth / 2.8);
 
+	/** Calculate the height of the song depending on the width **/
+
+	var songAvatarWidth = $('.SongAvatar').width() ;
+	$('.SongAvatar').css("height",songAvatarWidth);
 
 });
 
@@ -23,6 +27,15 @@ $( document ).ajaxComplete(function( event,request, settings ) {
 
 	});
 
+	$('#openLogin').click(function(){
+		$('#loginPop').show(0);
+		return false;
+	});
+	$('#openRegister').click(function(){
+		$('#registerPop').show(0);
+		return false;
+	});
+
 	/** Calculate the height of the box depending on the width **/
 
 	var boxWidth = $('.Box').width();
@@ -33,6 +46,12 @@ $( document ).ajaxComplete(function( event,request, settings ) {
 	var sliderWidth = $('.slider').width() ;
 	$('.slider').css("height",sliderWidth / 2.8);
 	$('.sliderDiapos').css("height",sliderWidth / 3.1);
+
+	/** Calculate the height of the song depending on the width **/
+
+	var songAvatarWidth = $('.SongAvatar').width() ;
+	$('.SongAvatar').css("height",songAvatarWidth);
+
 
 	var songHeader = $('.SongHeader').height();
  

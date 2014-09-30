@@ -1,5 +1,5 @@
 
-<footer class="footer" id="footer">
+<footer class="footer" id="footer" style="display:none;">
 	<div class="footerContent">
 		<ul>
 			<strong>music4deejays 2014</strong>
@@ -37,7 +37,7 @@
                     $playlistImage = $thumb[0];
               ?>
 	          <?php if(get_field('soundcloudURL')): ?>
-	          		<li class= 'playlistItem' data-type='soundcloud' data-path='<?php the_field('soundcloudURL'); ?>' data-thumb='<?php echo $playlistImage; ?>' />
+	          		<li class="playlistItem" data-type="soundcloud" data-path="<?php the_field('soundcloudURL'); ?>" data-thumb="<?php echo $playlistImage; ?>"></li>
 	          <?php endif; ?>
 
 	      <?php endwhile; ?>
@@ -56,7 +56,7 @@
                     $playlistImage = $thumb[0];
               ?>
 	          <?php if(get_field('soundcloudURL')): ?>
-	          		<li class= 'playlistItem' data-type='soundcloud' data-path='<?php the_field('soundcloudURL'); ?>' data-thumb='<?php echo $playlistImage; ?>' />
+	          		<li class="playlistItem" data-type="soundcloud" data-path="<?php the_field('soundcloudURL'); ?>" data-thumb="<?php echo $playlistImage; ?>"></li>
 	          <?php endif; ?>
 
 	      <?php endwhile; ?>
