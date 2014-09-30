@@ -10,6 +10,13 @@
     <div id="ajaxCenterContainer">
     <div id="ajaxCenterContainerint">
 
+        <style type="text/css">
+        .footer
+        {
+            display: none;
+        }
+        </style>
+
         <?php  
             if (have_posts()) : while (have_posts()) : the_post(); 
         ?>

@@ -4,11 +4,17 @@ $(window).resize(function() {
 	
 	var boxWidth = $('.Box').width();
 	$('.BoxImage').css("height",boxWidth);
+
+	var sliderWidth = $('.slider').width() ;
+	$('.slider').css("height",sliderWidth / 2.8);
+	$('.sliderDiapos').css("height",sliderWidth / 3.1);
+
+
 });
 
 // Executes this when the ajax finish
 $( document ).ajaxComplete(function( event,request, settings ) {
-  
+  	
 	$('.sliderDiapos').DDSlider({
 
 	  nextSlide: '.sliderButtonNext',
@@ -22,10 +28,14 @@ $( document ).ajaxComplete(function( event,request, settings ) {
 	var boxWidth = $('.Box').width();
 	$('.BoxImage').css("height",boxWidth);
 
+	/** Calculate the height of the slider depending on the width **/
+
+	var sliderWidth = $('.slider').width() ;
+	$('.slider').css("height",sliderWidth / 2.8);
+	$('.sliderDiapos').css("height",sliderWidth / 3.1);
+
 	var songHeader = $('.SongHeader').height();
-
-	$('#SongBackground').css({"height":songHeader+210}); 
-
+ 
 	$('#SongBackground').hide(0);
 
 	$('#SongBackgroundBlur').blurjs({
@@ -49,7 +59,7 @@ $( document ).ajaxComplete(function( event,request, settings ) {
 });
 
 
-$('#open_DrowDown').click(function () {
+$('#open_DrowDown').hover(function () {
 	$('#menuDropdown').slideToggle(0); 
 	return false;
 });
@@ -58,7 +68,7 @@ $('#menuDropdown a').click(function () {
 	$('#menuDropdown').hide(0); 
 });
 
-$('#menuDropdown').mouseleave(function () {
+$('#menu_drop').mouseleave(function () {
 	$('#menuDropdown').delay(100);
 	$('#menuDropdown').hide(0);
 	return false;

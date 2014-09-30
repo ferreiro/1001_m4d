@@ -714,6 +714,7 @@ ul, li
 	margin: 0 !important;  
 	transition:1s;
 	background:#ce0814 url(images/Header.jpg);
+	background: #000;
 
 /*	border-bottom: 1px solid #b10101;	
 	box-shadow: rgba(0,0,0,0.2) 0 1px 3px;
@@ -802,7 +803,6 @@ ul, li
 	display: inline-block;
 	margin: 0;
 	padding: 0; 
-	float: left;
 	position: relative;
 }
 .HeaderMenu ul li.selected a
@@ -812,11 +812,12 @@ ul, li
 .HeaderMenu ul li:hover a
 {
 	background: rgba(0,0,0, 0.6);
+	color: #0FE0E0;
 }
 .HeaderMenu ul li a
 {
 	padding: 23px 20px;
-	height: 16px; 
+	height: 14px; 
 	float: left;
 	color: #fff;
 	font-size: 1em; 
@@ -880,8 +881,7 @@ ul, li
 	transition: 0.3s;
 	overflow: hidden;
 	display: none;
-	border:1px solid #000;
-	border-color: #8B050D;
+	border:1px solid #000; 
 
 	border-top: 0;
 	border-bottom: 0;
@@ -923,6 +923,7 @@ ul, li
 	padding-left: 15px;
 	font-size: 14px;
 	color: #f4e8e8;
+	text-transform: uppercase;
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #fff;
@@ -983,6 +984,10 @@ ul, li
 	padding: 10px 7px;
 	font-weight: 600;
 } 
+.HeaderRight ul li:last-child a span
+{
+	font-size: 2.2em;
+}
 .HeaderRight ul li
 {
 	display: inline-block;
@@ -1827,9 +1832,9 @@ ul, li
 .SongBackground
 {
 	width:100%; 
-	height:250px; 
 	opacity:.3; 
 	top:0; 
+	bottom: 0;
 	left:0; 
 	z-index:-1; 
 	float:left; 
@@ -2919,7 +2924,9 @@ ul, li
 	} 
 	.HeaderMenu
 	{
+		float: left;
 		display: block;
+		text-align: center;
 	}
 	.HeaderCenter
 	{
@@ -3276,6 +3283,43 @@ ul, li
 		width: 625px;
 		float: right; 
 	}
+
+	/**************
+		Song 
+	***************/
+	.Song
+	{
+		position: fixed;
+		left: 0;
+		top: 55px;
+		bottom: 50px;
+		right: 320px; 
+	}
+	.SongHeader
+	{
+		width: 900px;
+		height: 400px;
+		margin-left: -640px;
+		margin-top: -200px;
+		position: absolute;
+		top: 50%;
+		left: 50%; 
+	}
+	.SingleRelated
+	{
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+	}
+	.FullComments
+	{
+		width: 320px;
+		position: fixed;
+		top: 55px;
+		bottom: 50px;
+		right: 0;
+	}
 	/**************
 		UPLOADER 
 	***************/
@@ -3296,7 +3340,7 @@ ul, li
 }
 
 
-@media all and (min-width: 1250px) {
+@media all and (min-width: 1400px) {
 
 
 	.PlayerContent {

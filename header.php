@@ -71,6 +71,23 @@
       </div>
     </div>
 
+    <div class="HeaderCenter">
+      <div class="HeaderSearch">
+
+        <form action="http://music4deejays.com/" class="searchform" id="searchform" method="get" role="search" _lpchecked="1">
+          <input type="text" class="HeaderSearchInput" name="s" id="s" placeholder="Search..."  autocomplete="off">
+          <input type="submit" class="HeaderSearchSubmit" name="submit" id="searchsubmit" value=" ">
+        </form>
+        <style type="text/css">
+        #btn_search:before {
+          color: #f4e8e8;
+          opacity: 0.6;
+        }
+        </style>
+        <span class="icon-search" id="btn_search" style="width:20px; height:20px; position:absolute; right:5px; top:50%; margin-top:-10px;"></span>
+      </div>
+    </div>
+
     <div class="HeaderButton">
       <a href="#" id="open_MenuDropDown" class="icon-menu"></a>
     </div>
@@ -97,23 +114,6 @@
     </ul>
     </div>
 
-    <div class="HeaderCenter">
-      <div class="HeaderSearch">
-
-        <form action="http://music4deejays.com/" class="searchform" id="searchform" method="get" role="search" _lpchecked="1">
-          <input type="text" class="HeaderSearchInput" name="s" id="s" placeholder="Search..."  autocomplete="off">
-          <input type="submit" class="HeaderSearchSubmit" name="submit" id="searchsubmit" value=" ">
-        </form>
-        <style type="text/css">
-        #btn_search:before {
-          color: #f4e8e8;
-          opacity: 0.6;
-        }
-        </style>
-        <span class="icon-search" id="btn_search" style="width:20px; height:20px; position:absolute; right:5px; top:8px;"></span>
-      </div>
-    </div>
-
     <div class="HeaderRight"> 
       <ul>
         <li><a href="/login/">Login o register</a></li>
@@ -124,6 +124,7 @@
         </li>
       </ul>
     </div>
+    
 
   </div>
 </header>

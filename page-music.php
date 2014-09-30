@@ -1,9 +1,15 @@
+
     <?php get_header(); ?>
 
+    <?php 
+        $Maincategory = get_the_category();
+        $MaincategoryID = $Maincategory[0]->cat_id;
+        $MaincategoryName = $Maincategory[0]->cat_name;
+    ?>
 
-<div id="MainContent">
-    <div class="container" id="container">
-
+    <div id="ajaxCenterContainer">
+    <div id="ajaxCenterContainerint">
+    
         <div class="category_songs">
 
 
@@ -200,10 +206,12 @@
 
         </div>
 
-    </div> 
-</div><!-- Fin MainContent -->
+
+    </div><!-- Fin ajax container -->
+    </div><!-- Fin Section content -->
+
+</div>
+</div><!-- Fin section wrap -->
  
-    
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
   
- 
