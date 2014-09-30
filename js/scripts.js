@@ -1,6 +1,12 @@
 
-// Executes this when the ajax finish
+$(window).resize(function() {
+	/** Calculate the height of the box depending on the width **/
+	
+	var boxWidth = $('.Box').width();
+	$('.BoxImage').css("height",boxWidth);
+});
 
+// Executes this when the ajax finish
 $( document ).ajaxComplete(function( event,request, settings ) {
   
 	$('.sliderDiapos').DDSlider({
@@ -10,6 +16,11 @@ $( document ).ajaxComplete(function( event,request, settings ) {
 	  selector: '.sliderSelector'
 
 	});
+
+	/** Calculate the height of the box depending on the width **/
+
+	var boxWidth = $('.Box').width();
+	$('.BoxImage').css("height",boxWidth);
 
 	var songHeader = $('.SongHeader').height();
 

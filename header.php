@@ -67,7 +67,7 @@
 
     <div class="HeaderLeft">
       <div class="HeaderLogo">
-        <a href="<?php echo home_url(); ?>/"></a>
+        <a href="/"></a>
       </div>
     </div>
 
@@ -77,9 +77,6 @@
 
     <div class="HeaderMenu">
     <ul>
-      <li>
-        <a href="/">Featured</a>
-      </li>
       <li id="menu_drop">
         <a href="/music" id="open_DrowDown">
             Music
@@ -95,7 +92,7 @@
         <a href="/mixes">Mixes</a>
       </li>
       <li>
-        <a href="/trending/">Hot tracks</a>
+        <a href="/trending/">Trending</a>
       </li>
     </ul>
     </div>
@@ -119,11 +116,9 @@
 
     <div class="HeaderRight"> 
       <ul>
-        <li><a href="/login/">Login</a></li>
-        <li><a href="/register">Register</a></li>
+        <li><a href="/login/">Login o register</a></li>
         <li class="upload_tracks">
           <a href="/send_tracks">
-            Upload
             <span class="icon-upload" ></span>
           </a>
         </li>

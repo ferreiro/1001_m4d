@@ -712,24 +712,8 @@ ul, li
 	position: fixed; 
 	display: inline-block;
 	margin: 0 !important;  
-	background: -moz-linear-gradient(top,  rgba(36,36,36,1) 0%, rgba(36,36,36,0.65) 55%, rgba(36,36,36,0.01) 99%, rgba(36,36,36,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(36,36,36,1)), color-stop(55%,rgba(36,36,36,0.65)), color-stop(99%,rgba(36,36,36,0.01)), color-stop(100%,rgba(36,36,36,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(36,36,36,1) 0%,rgba(36,36,36,0.65) 55%,rgba(36,36,36,0.01) 99%,rgba(36,36,36,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(36,36,36,1) 0%,rgba(36,36,36,0.65) 55%,rgba(36,36,36,0.01) 99%,rgba(36,36,36,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(36,36,36,1) 0%,rgba(36,36,36,0.65) 55%,rgba(36,36,36,0.01) 99%,rgba(36,36,36,0) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(36,36,36,1) 0%,rgba(36,36,36,0.65) 55%,rgba(36,36,36,0.01) 99%,rgba(36,36,36,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#00242424',GradientType=0 ); /* IE6-9 */
-
-	background: -moz-linear-gradient(top,  rgba(36,36,36,1) 0%, rgba(36,36,36,0.71) 30%, rgba(36,36,36,0.39) 80%, rgba(36,36,36,0.02) 99%, rgba(36,36,36,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(36,36,36,1)), color-stop(30%,rgba(36,36,36,0.71)), color-stop(80%,rgba(36,36,36,0.39)), color-stop(99%,rgba(36,36,36,0.02)), color-stop(100%,rgba(36,36,36,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(36,36,36,1) 0%,rgba(36,36,36,0.71) 30%,rgba(36,36,36,0.39) 80%,rgba(36,36,36,0.02) 99%,rgba(36,36,36,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(36,36,36,1) 0%,rgba(36,36,36,0.71) 30%,rgba(36,36,36,0.39) 80%,rgba(36,36,36,0.02) 99%,rgba(36,36,36,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(36,36,36,1) 0%,rgba(36,36,36,0.71) 30%,rgba(36,36,36,0.39) 80%,rgba(36,36,36,0.02) 99%,rgba(36,36,36,0) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(36,36,36,1) 0%,rgba(36,36,36,0.71) 30%,rgba(36,36,36,0.39) 80%,rgba(36,36,36,0.02) 99%,rgba(36,36,36,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#00242424',GradientType=0 ); /* IE6-9 */
-
-	background: rgba(20, 24, 35, 0.7);
 	transition:1s;
+	background:#ce0814 url(images/Header.jpg);
 
 /*	border-bottom: 1px solid #b10101;	
 	box-shadow: rgba(0,0,0,0.2) 0 1px 3px;
@@ -751,31 +735,28 @@ ul, li
 	position: absolute;
 	top: 0;
 	left: 0;
+	display: none;
 }
 
-.Header:hover 
-{	
-	background: rgba(20, 24, 35, 0.9);
-}
 .HeaderContent
 {
-	height: 50px;
+	height: 100%;
 	margin:0 1.5em;
 }
 .HeaderLeft
 {
-	width: 230px;  
+	width: 210px;  
 	float: left;
 	position: relative; 
 }
 .HeaderLogo
 {
 	width: 210px;
-	height: 26px;
+	height: 30px;
 	background:url(images/HeaderLogo.png) 0% 50% no-repeat;
 	background-size:100% auto ; 
 	float: left;
-	margin-top: 14px;
+	margin-top: 18px;
 } 
 .HeaderLogo a
 {
@@ -799,20 +780,18 @@ ul, li
 	color: #fff;
 }
 .HeaderMenu
-{
-	width: 375px;
+{ 
 	float: left;
 	display: none;
-	text-align: left;
-	margin-right: 5px;
+	text-align: left; 
 }
 .HeaderMenu ul
 {
 	width: 100%; 
-	height: 31px;
+	height: 100%;
 	margin: 0;
 	padding: 0;
-	margin-top: 8px;
+	margin-top: 0;
 }
 .HeaderMenu ul li:last-child
 {
@@ -822,8 +801,7 @@ ul, li
 {
 	display: inline-block;
 	margin: 0;
-	padding: 0;
-	margin-right: 11px;
+	padding: 0; 
 	float: left;
 	position: relative;
 }
@@ -837,16 +815,13 @@ ul, li
 }
 .HeaderMenu ul li a
 {
-	padding: 10px 13px;
-	height: 14px; 
+	padding: 23px 20px;
+	height: 16px; 
 	float: left;
 	color: #fff;
-	font-size: 0.9em; 
+	font-size: 1em; 
 	text-transform: uppercase;
-	font-weight: 400;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
+	font-weight: 600; 
 }
 .HeaderMenu ul li#menu_drop a span:before
 {
@@ -900,14 +875,17 @@ ul, li
 .HeaderCenter
 {
 	width: 198px; 
-	height: 29px; 
+	height: 100%; 
 	float: right; 
-	margin-top: 9px;
-	border-radius: 3px;
 	transition: 0.3s;
 	overflow: hidden;
 	display: none;
 	border:1px solid #000;
+	border-color: #8B050D;
+
+	border-top: 0;
+	border-bottom: 0;
+
 /*	background-color: #be0d11;
 	background-color: rgb(166, 27, 30);
 	background-image: linear-gradient(#c80f16, #ac0c10);
@@ -987,10 +965,9 @@ ul, li
 .HeaderRight ul
 {
 	width: 100%; 
-	height: 31px;
+	height: 100%;
 	margin: 0;
-	padding: 0;
-	margin-top: 8px; 
+	padding: 0; 
 }
 .HeaderRight ul li:last-child
 {
@@ -999,18 +976,13 @@ ul, li
 }
 .HeaderRight ul li:last-child a:before
 {
-	margin-right: 5px;
-	color: #ff9000;
+	font-size: 1.2em;
 }
 .HeaderRight ul li:last-child a
 {
 	padding: 10px 7px;
 	font-weight: 600;
-}
-.HeaderRight ul li:first-child
-{
-	opacity: 0.9;
-}
+} 
 .HeaderRight ul li
 {
 	display: inline-block;
@@ -1023,17 +995,13 @@ ul, li
 }
 .HeaderRight ul li a
 {
-	padding: 10px 3px;
-	height: 14px; 
+	padding: 23px 20px;
+	height: 16px; 
 	float: left;
 	color: #fff;
-	font-size: 0.9em; 
+	font-size: 1em; 
 	text-transform: uppercase;
-	font-weight: 400;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	transition:0.3s;
+	font-weight: 600; 
 }
 .HeaderLogin a,
 .HeaderLogin p,
@@ -2933,13 +2901,12 @@ ul, li
 	
 	.Header
 	{
+		height: 60px;
 		top: 0;
 	}
-	.section,
 	.HeaderContent
 	{	
-		width: 980px;
-		margin: 0 auto;
+		height: 60px;
 		transition:0.3s;
 	}
 	.sectionMenu,
@@ -2984,15 +2951,28 @@ ul, li
 		transition:0.3s;
 	}
 
-
 	/**************
 		Section
 	***************/
 
+	.sectionWrap 
+	{
+		margin-top: 60px;
+		position: relative;
+	}
+	.section,
+	.HeaderContent
+	{
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+	}
 	.section
 	{
+		width: auto !important;
 		display: block;
-		min-height: 200px; 
+		min-height: 200px; 		
+		padding-left: 0;
+		padding-right: 0;
 	} 
 	.setionMenuFixed
 	{
@@ -3018,14 +2998,18 @@ ul, li
 	.sectionContentLeft
 	{
 		width: 770px;   
+		width: 73% !important;
+		margin-right: 2% !important;
 		display: inline-block;
 		display: inline-block !important;
-		margin-right: 15px;
+		/* margin-right: 15px; */
 		vertical-align: top;
 	}
 	.sectionContentRight 
 	{
 		width: 190px;
+		width:25% !important;
+		float: right;
 		height: auto; 
 		display: inline-block !important;   
 		transition:0.3s; 
@@ -3071,7 +3055,6 @@ ul, li
 	}
 	.slider
 	{
-		width: 770px;
 		height: 330px;
 		position: relative; 
 		display: inline-block;
@@ -3183,13 +3166,25 @@ ul, li
 		width: 100%; 
 		text-align: left;
 	} 
+	.Box 
+	{
+		width: 19.1% !important;
+		margin-right: 1.1% !important;
+		float: left;
+	}
 	.Box:nth-child(5n)
 	{
-		margin-right:0;
+		margin-right:0 !important; 
 	} 
+	.BoxLarge 
+	{
+		width: 32.1% !important;
+		margin-right: 1.1% !important;
+		float: left;
+	}
 	.BoxLarge:nth-child(3n)
 	{
-		margin-right:0;
+		margin-right:0 !important;
 	} 
 
 	/*********************
@@ -3298,7 +3293,6 @@ ul, li
 	{
 		text-align: center;
 	}
-
 }
 
 
@@ -3323,10 +3317,6 @@ ul, li
 		margin-right: 10px;
 		margin-top: 2px;
 	}
-	.HeaderRight ul li:last-child a:after
-	{
-		content: " Song";
-	}
 	.linea_derecha
 	{
 	    width: 305px !important;
@@ -3336,20 +3326,10 @@ ul, li
 	{
 		width: 305px;
 	}
-	.section,
-	.HeaderContent
-	{	
-		width: 1085px;
-	}
 	.sectionMenu
 	.
 	{
 		width: 335px !important; 
-	}
-	#LoadingRight,
-	.sectionContentRight 
-	{
-		width: 290px !important; 
 	}
 	.HeaderRight {
 		position: relative;
@@ -3375,15 +3355,18 @@ ul, li
 		Category 	
 	***************/
 
-	.sectionContentLeft
-	{
-		margin-right: 20px;
-	}
 	.SectionToptracksFilter li
 	{ 
 		margin-right: 15px;
 		float: left;
 	}
  
+
+	.section,
+	.HeaderContent
+	{
+		margin-left: 10% !important;
+		margin-right: 10% !important;
+	}
 
 }
