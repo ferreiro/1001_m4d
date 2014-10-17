@@ -2368,6 +2368,14 @@ ul, li
 	{
 		display: none;
 	} 
+	.player_mediaName_Mask
+	{
+		position: absolute;
+		left: 30px;
+		right: 30px;
+		top: 5px;
+		height: 30px;
+	}
 	.PlayerControllers
 	{
 		width: 210px; 
@@ -2646,8 +2654,7 @@ ul, li
 		margin: 0 auto;
 		padding: 2em 0;
 		position: absolute;
-		top: 50%;
-		margin-top: -150px;
+		top: 20%; 
 		left: 50%;
 		margin-left: -325px;
 	}
@@ -2685,6 +2692,17 @@ ul, li
 	.PlayerImage img
 	{
 		width: 100%;
+	}
+	.player_mediaName_Mask
+	{
+		position: absolute;
+		left: 20px;
+		right: 20px;
+		top: 10px;
+		height: 40px;
+		overflow: hidden;
+		color: #757575;
+		font-weight: 600;
 	}
 	.PlayerContent
 	{
@@ -2822,15 +2840,17 @@ ul, li
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		border-radius: 3px;
-		background: #dd2323; /* Old browsers */
-		background: -moz-linear-gradient(left,  #dd2323 0%, #bb2323 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#dd2323), color-stop(100%,#bb2323)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(left,  #dd2323 0%,#bb2323 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(left,  #dd2323 0%,#bb2323 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(left,  #dd2323 0%,#bb2323 100%); /* IE10+ */
-		background: linear-gradient(to right,  #dd2323 0%,#bb2323 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd2323', endColorstr='#bb2323',GradientType=1 ); /* IE6-9 */
 
+		/* background: #dd2323; */ /* Old browsers */
+		/* background: -moz-linear-gradient(left,  #dd2323 0%, #bb2323 100%); */ /* FF3.6+ */
+		/* background: -webkit-gradient(linear, left top, right top, color-stop(0%,#dd2323), color-stop(100%,#bb2323)); */ /* Chrome,Safari4+ */
+		/* background: -webkit-linear-gradient(left,  #dd2323 0%,#bb2323 100%); */ /* Chrome10+,Safari5.1+ */
+		/* background: -o-linear-gradient(left,  #dd2323 0%,#bb2323 100%); */ /* Opera 11.10+ */
+		/* background: -ms-linear-gradient(left,  #dd2323 0%,#bb2323 100%); */ /* IE10+ */
+		/* background: linear-gradient(to right,  #dd2323 0%,#bb2323 100%); */ /* W3C */
+		/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd2323', endColorstr='#bb2323',GradientType=1 ); */ /* IE6-9 */
+
+		background: #9C9C9C;
 		box-shadow:         0px 0px 2px 0px rgba(255, 0, 0, 0.75);
 		-moz-box-shadow:    0px 0px 2px 0px rgba(255, 0, 0, 0.75);
 		-webkit-box-shadow: 0px 0px 2px 0px rgba(255, 0, 0, 0.75);
@@ -2939,8 +2959,8 @@ ul, li
 	{
 		width: auto;
 		right: 0;
-		left: 230px;
 		left: 0;
+		left: 240px;
 		z-index: 10000;
 	}
 	.HeaderAside
@@ -3063,14 +3083,18 @@ ul, li
 		right: 0;
 	}
 	.Menu h3
-	{
-		text-transform: uppercase;
-		color: #727272;
-		font-size: 1em;
+	{ 
+		margin: 10px 20px;
+		float: left; 
+		font-size: 10px;
 		font-weight: 600;
-		margin: 15px 20px;
-		float: left;
-		color: rgba(78, 75, 75, 0.8);
+		text-transform: uppercase;
+		color: #666;
+	} 
+	.Menu li.selected .m_icon
+	{
+		margin-left: -4px;
+		font-family: 'Open Sans', Helvetica, sans-serif, Arial;
 	}
 	.Menu li.selected a
 	{
@@ -3107,11 +3131,17 @@ ul, li
 	{
 		width: 20px;
 		height: 20px;
+		text-align: center;
 		list-style: none;
 		display: inline-block;
-		display: none;
+		background: #000;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
 		float: left;
 		margin-right: 15px;
+		font-weight: bold;
+		padding-top: 3px;
 	}
 	.Menu .m_title
 	{
@@ -3120,6 +3150,7 @@ ul, li
 		float: left;
 		color: #4E4B4B;
 		color: #868181;
+		color: #9b9b9b;
 	}
 	.HeaderAsideLogin
 	{
@@ -3128,7 +3159,7 @@ ul, li
 		padding-left: 20px;
 		padding-right: 20px;
 		position: absolute;
-		bottom: 220px;
+		bottom: 170px;
 		height: 30px;
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -3136,7 +3167,7 @@ ul, li
 	}
 	.HeaderAsideLogin a 
 	{
-		width: 48%;
+		width: 47%;
 		height: 30px;
 		float: left; 
 		position: relative;
@@ -3157,10 +3188,10 @@ ul, li
 	}
 	.HeaderAsidePlayer
 	{
-		position: absolute;
-		bottom: 0;
+		position: absolute; 
 		width: 100%;
-		height: 220px;
+		height: 130px;
+		bottom: 40px;
 		background: #111111;
 		border-top: 1px solid #050505 ;
 	}
@@ -3181,6 +3212,14 @@ ul, li
 		width: 33.333%;
 		margin-right: 0 !important;
 		float: left;
+	}
+	.HeaderAsideFooter
+	{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 40px; 
+		border-top: 1px solid #050505 ;
 	}
 
 	.Header
@@ -3243,7 +3282,7 @@ ul, li
 
 	.sectionWrap 
 	{
-		min-height: 100vh; 	
+		min-height: 200px; 	
 		margin-top: 0;
 		position: relative;
 		margin-left: 240px;
@@ -3259,7 +3298,7 @@ ul, li
 	{
 		width: auto !important;
 		display: block;
-		min-height: 100vh; 		
+		min-height: 200px; 		
 		padding-left: 0;
 		padding-right: 0;
 	} 
