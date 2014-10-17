@@ -628,8 +628,15 @@ ul, li
 	float: right;
 	background: #f4f4f4;
 }
- 
-
+.loginPopBackground
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+}
 
 /**************
 	Section

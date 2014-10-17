@@ -255,6 +255,7 @@
   <div class="content">
     <?php echo do_shortcode('[userpro template=login]'); ?>
   </div>
+  <div class="loginPopBackground"></div>
 </section>
 
 <section class="loginPop" id="registerPop" style="display:none;"> 
@@ -264,6 +265,7 @@
   <div class="content">
     <?php echo do_shortcode('[userpro template=register]'); ?>
   </div>
+  <div class="loginPopBackground"></div>
 </section>
 
 
