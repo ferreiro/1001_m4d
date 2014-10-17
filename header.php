@@ -148,33 +148,33 @@
       <ul class="Menu">
           <li class="novedades_m">
               <a href="/">
-                  <span class="m_icon icon-home">F</span>
-                  <span class="m_title">Featured</span>
+                  <span class="m_icon icon-home"></span>
+                  <span class="m_title">Novedades</span>
               </a>
           </li>
-          <h3 style="display:none;">Music</h3>
+          <h3>Music</h3>
           <li class="electro_m">
               <a href="/electro">
-                  <span class="m_icon icon-home">E</span>
+                  <span class="m_icon icon-home"></span>
                   <span class="m_title">Electro House</span>
               </a>
           </li>
           <li class="progressive_m">
               <a href="/progressive">
-                  <span class="m_icon icon-home">P</span>
+                  <span class="m_icon icon-home"></span>
                   <span class="m_title">Progressive</span>
               </a>
           </li>
           <li class="dubstep_m">
               <a href="/dubstep">
-                  <span class="m_icon icon-home">D</span>
+                  <span class="m_icon icon-home"></span>
                   <span class="m_title">Dubstep</span>
               </a>
           </li>
-          <h3 style="display:none;">Spotlight</h3>
+          <h3>Spotlight</h3>
           <li class="trending_m">
               <a href="/trending">
-                  <span class="m_icon icon-home">T</span>
+                  <span class="m_icon icon-home"></span>
                   <span class="m_title">Trending</span>
               </a>
           </li>
@@ -243,8 +243,8 @@
           
         </div>
         </div>
-    </div>
 
+    </div>
 </header>
 
 
