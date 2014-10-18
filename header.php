@@ -265,7 +265,7 @@
   <div class="content">
     <?php echo do_shortcode('[userpro template=register]'); ?>
   </div>
-  <div class="loginPopBackground"></div>
+  <div class="loginPopBackground" style="display:none;"></div>
 </section>
 
 
