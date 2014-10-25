@@ -61,7 +61,7 @@
 </head>
 <body <?php body_class(); ?>>
   
-<header class="Header" style="display:none;">
+<header class="Header">
   <div class="HeaderGradient"></div>
   <div class="HeaderContent">
 
@@ -126,7 +126,6 @@
       </ul>
     </div>
 
-
   </div>
 </header>
 
@@ -135,7 +134,6 @@
         <div class="HeaderAsideLogo">
             <a href="#"></a>
         </div>
-
         <div class="HeaderAsideSearch">
           <form action="http://music4deejays.com/" class="searchform" id="searchform" method="get" role="search" _lpchecked="1">
             <input type="text" class="HeaderSearchInput" name="s" id="s" placeholder="Search..."  autocomplete="off">
@@ -169,6 +167,12 @@
               <a href="/dubstep">
                   <span class="m_icon icon-home">D</span>
                   <span class="m_title">Dubstep</span>
+              </a>
+          </li>
+          <li class="mixes_m">
+              <a href="/mixes">
+                  <span class="m_icon icon-home">M</span>
+                  <span class="m_title">Mixes</span>
               </a>
           </li>
           <h3 style="display:none;">Spotlight</h3>
@@ -247,7 +251,6 @@
 
 </header>
 
-
 <section class="loginPop" id="loginPop" style="display:none;"> 
   <div class="close" id="close_contact">
     <span class="icon-close"><a href="index.php"></a></span>
@@ -255,7 +258,6 @@
   <div class="content">
     <?php echo do_shortcode('[userpro template=login]'); ?>
   </div>
-  <div class="loginPopBackground"></div>
 </section>
 
 <section class="loginPop" id="registerPop" style="display:none;"> 
@@ -264,10 +266,10 @@
   </div>
   <div class="content">
     <?php echo do_shortcode('[userpro template=register]'); ?>
-  </div>
-  <div class="loginPopBackground" style="display:none;"></div>
+  </div> 
 </section>
 
+<div class="loginPopBackground"></div>
 
 <div class="loader" id="loading">
   <div class="loaderGif"></div>
@@ -277,42 +279,5 @@
 
 <div class="sectionWrap">
 <div class="section">
-
-  <div class="sectionMenu" style="float:right; right:0; z-index:1000; position:absolute; margin-left:0; margin-right:0;">
-    <div class="setionMenuFixed">
-
-      <nav class="menu" style="display:none;">
-      <ul>
-          <li class="selected">
-              <a href="<?php echo home_url(); ?>/">
-                  Featured tracks
-              </a>
-          </li>
-          <div class="submenu">
-              <ul>
-                  <li>
-                      <a href="<?php echo home_url(); ?>/electro">Electro House</a>
-                  </li>
-                  <li>
-                      <a href="<?php echo home_url(); ?>/progressive">Progressive House</a>
-                  </li>
-                  <li>
-                      <a href="<?php echo home_url(); ?>/dubstep">Dubstep</a>
-                  </li>
-              </ul>
-          </div>
-
-          <li>
-              <a href="<?php echo home_url(); ?>/mixes">
-                  Mixes
-              </a>
-          </li>
-      </ul>
-      </nav>
-
-
-    </div>
-  </div>
-
+  
   <div class="sectionContent">
-

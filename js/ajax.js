@@ -54,7 +54,7 @@
 			$.address.value(path); // 1 = Just load left
 			return false;
 		}
-		if ( !$el.hasClass("noAjax") ) {	
+		if ((!$el.hasClass("userpro")) && (!$el.hasClass("noAjax")) ) {	
 
 			$('.Menu li').removeClass("selected");
 

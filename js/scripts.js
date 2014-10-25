@@ -28,13 +28,32 @@ $( document ).ajaxComplete(function( event,request, settings ) {
 	});
 
 	$('#openLogin').click(function(){
-		$('#loginPop').show(0);
+		$('.loginPop').slideToggle(0);
+		$('.loginPopBackground').slideToggle(0); 
+		$('#loginPop').slideToggle(0);
 		return false;
 	});
 	$('#openRegister').click(function(){
-		$('#registerPop').show(0);
+		$('.loginPop').slideToggle(0); 
+		$('.loginPopBackground').slideToggle(0); 
+		$('#registerPop').slideToggle(0);
 		return false;
 	});
+
+	$('.userpro-close-popup').click(function(){
+		$('.loginPop').hide(0); 
+		$('.loginPopBackground').hide(0); 
+		$('#registerPop').hide(0);
+		return false;
+	});
+
+	$('.loginPopBackground').click(function(){
+		$('.loginPop').hide(0); 
+		$('.loginPopBackground').hide(0);  
+		return false;
+	});
+
+
 
 	/** Calculate the height of the box depending on the width **/
 

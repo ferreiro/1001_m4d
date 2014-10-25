@@ -261,7 +261,26 @@
         </div>
   
         <div class="sectionContentRight">
-            Right now.
+            <h3 style="color:#686868;">
+                Related songs
+            </h3>
+            <div class="SingleRelated">
+                <?php query_posts(array('orderby' => 'rand', 'showposts' => 9 )); 
+                    if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    
+                    <li><a href="<?php echo the_permalink(); ?>">
+                        <?php 
+                            $featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                        ?>
+                        <div class="SingleRelatedCover" style="background-image:url(<?php echo $featuredImage; ?>);"></div>
+                        <div class="SingleRelatedInfo">
+                            <h2><?php echo the_title(); ?></h2>
+                            <p><?php echo the_title(); ?></p>
+                        </div>
+                    </a></li>
+
+                <? endwhile; endif; ?> 
+            </div>
         </div>
 
     </div><!-- Fin ajax container -->
